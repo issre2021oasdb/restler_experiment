@@ -1,0 +1,9 @@
+UseAfterFreeChecker_20x: 1
+Total Buckets: 1
+-------------
+UseAfterFreeChecker_20x - Bug was reproduced - UseAfterFreeChecker_20x_1.txt
+Hash: UseAfterFreeChecker_20x_e6957fa28aa87b4d0ec28031aae07ae992b90afc
+POST /incidents HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{\n    "title":fuzzstring,\n    "service_id":1,\n    "assignee_id":1}\r\n
+DELETE /incidents/_READER_DELIM_incidents_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\n\r\n
+GET /incidents/_READER_DELIM_incidents_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\n\r\n
+--------------------------------------------------------------------------------

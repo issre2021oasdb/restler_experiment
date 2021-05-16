@@ -1,0 +1,38 @@
+PayloadBodyChecker_500: 8
+Total Buckets: 8
+-------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_1.txt
+Hash: PayloadBodyChecker_500_9efa7674105507ca876db0ecc3f272404bb89a9a
+POST /projects HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"description":"fuzzstring"}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_2.txt
+Hash: PayloadBodyChecker_500_ad73ac7bff877344657ac996c45791afb736a813
+POST /projects HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"name":"fuzzstring"}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_3.txt
+Hash: PayloadBodyChecker_500_97ce0056d9c507fa915b1cb9371c97c1ccf73d5c
+POST /projects HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"description":{ "fuzz" : false }}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_4.txt
+Hash: PayloadBodyChecker_500_3e3c4ab4b01d014fd22609f759f0a19e2865f0e2
+POST /projects HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{ "fuzz" : false }
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_5.txt
+Hash: PayloadBodyChecker_500_abb0f0049acfc1d80cc2426b48df4b86ab19f4a6
+POST /projects HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{\n    "name":fuzzstring,\n    "description":fuzzstring}\r\n
+PUT /projects/_READER_DELIM_projects_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"description":"fuzzstring"}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_6.txt
+Hash: PayloadBodyChecker_500_a3ed2428c4acf9641aa59637c4a09e781ff32318
+PUT /projects/_READER_DELIM_projects_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"name":"fuzzstring"}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_7.txt
+Hash: PayloadBodyChecker_500_cb9d798be2cdcc1044d788dc4bdf5cd7358df109
+POST /projects HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{\n    "name":fuzzstring,\n    "description":fuzzstring}\r\n
+PUT /projects/_READER_DELIM_projects_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"description":{ "fuzz" : false }}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_8.txt
+Hash: PayloadBodyChecker_500_bcbf515af3dc1304deed9c25cf4d799ce63945d7
+POST /projects HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{\n    "name":fuzzstring,\n    "description":fuzzstring}\r\n
+PUT /projects/_READER_DELIM_projects_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{ "fuzz" : false }
+--------------------------------------------------------------------------------

@@ -1,0 +1,9 @@
+UseAfterFreeChecker_20x: 1
+Total Buckets: 1
+-------------
+UseAfterFreeChecker_20x - Bug was reproduced - UseAfterFreeChecker_20x_1.txt
+Hash: UseAfterFreeChecker_20x_285af6790220a608c9f1435f24820c7e65aa0169
+POST /charges HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{\n    "amount":1.23,\n    "currency":fuzzstring,\n    "credit_card_id":1}\r\n
+DELETE /charges/_READER_DELIM_charges_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\n\r\n
+GET /charges/_READER_DELIM_charges_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\n\r\n
+--------------------------------------------------------------------------------

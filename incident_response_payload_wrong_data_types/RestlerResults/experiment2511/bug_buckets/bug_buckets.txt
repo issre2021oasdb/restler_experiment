@@ -1,0 +1,30 @@
+PayloadBodyChecker_500: 6
+Total Buckets: 6
+-------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_1.txt
+Hash: PayloadBodyChecker_500_eef15eac24fdd03a6b973b23a1a8e20334f16715
+POST /incidents HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"title":"fuzzstring","service_id":10,"assignee_id":{ "fuzz" : false }}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_2.txt
+Hash: PayloadBodyChecker_500_57925cf9ec1d186dffade4c3b933f4fc068e4aa2
+POST /incidents HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"title":"fuzzstring","service_id":{ "fuzz" : false },"assignee_id":12}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_3.txt
+Hash: PayloadBodyChecker_500_19d21d986f832be5f36f8d918480fa60668a9963
+POST /incidents HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"title":"fuzzstring","service_id":false,"assignee_id":19}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_4.txt
+Hash: PayloadBodyChecker_500_0d9dcebc42e9adeec4156dfc4b580ea9aaf35122
+POST /incidents HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{\n    "title":fuzzstring,\n    "service_id":1,\n    "assignee_id":1}\r\n
+PUT /incidents/_READER_DELIM_incidents_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"title":"fuzzstring","service_id":"fuzzstring","assignee_id":"fuzzstring"}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_5.txt
+Hash: PayloadBodyChecker_500_af8f4270c36201f5bc1cbf66c7e947d2e086a061
+POST /incidents HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{\n    "title":fuzzstring,\n    "service_id":1,\n    "assignee_id":1}\r\n
+PUT /incidents/_READER_DELIM_incidents_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"service_id":{ "fuzz" : false }}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_6.txt
+Hash: PayloadBodyChecker_500_522dd96c36ee5216389b2367e2ffa47d46ed9717
+POST /incidents HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{\n    "title":fuzzstring,\n    "service_id":1,\n    "assignee_id":1}\r\n
+PUT /incidents/_READER_DELIM_incidents_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"assignee_id":{ "fuzz" : false }}
+--------------------------------------------------------------------------------

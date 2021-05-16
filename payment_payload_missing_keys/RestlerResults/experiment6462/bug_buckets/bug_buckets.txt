@@ -1,0 +1,47 @@
+PayloadBodyChecker_500: 10
+Total Buckets: 10
+-------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_1.txt
+Hash: PayloadBodyChecker_500_180b74d0bc7b2725031845a02e9f9629d6f024b0
+POST /charges HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"currency":"fuzzstring"}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_2.txt
+Hash: PayloadBodyChecker_500_f030da16ca63da5197be00bf93725c8151dfb0fd
+POST /charges HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"amount":0}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_3.txt
+Hash: PayloadBodyChecker_500_c7521c15b693ebdcea06f261d0452a6d6addc80b
+POST /charges HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"credit_card_id":11}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_4.txt
+Hash: PayloadBodyChecker_500_acd077884802cf11730fb21042a6468ced403371
+POST /charges HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"currency":{ "fuzz" : false }}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_5.txt
+Hash: PayloadBodyChecker_500_159084f544e8be01b8022fb553f424885320719b
+POST /charges HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{ "fuzz" : false }
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_6.txt
+Hash: PayloadBodyChecker_500_7a2d55f95f98fbc7cb99e74d95f0bd5ea475edb5
+POST /charges HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{\n    "amount":1.23,\n    "currency":fuzzstring,\n    "credit_card_id":1}\r\n
+PUT /charges/_READER_DELIM_charges_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"currency":"fuzzstring"}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_7.txt
+Hash: PayloadBodyChecker_500_29850a3ee0c08be7ef1e8151e424ab2444d520d2
+POST /charges HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{\n    "amount":1.23,\n    "currency":fuzzstring,\n    "credit_card_id":1}\r\n
+PUT /charges/_READER_DELIM_charges_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"amount":0}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_8.txt
+Hash: PayloadBodyChecker_500_a70db40a2d2d7f21a6ed30b14800469d5788ece1
+PUT /charges/_READER_DELIM_charges_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"credit_card_id":28}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_9.txt
+Hash: PayloadBodyChecker_500_495593541f6d85dfb8e2826cec9191cd52c6d570
+POST /charges HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{\n    "amount":1.23,\n    "currency":fuzzstring,\n    "credit_card_id":1}\r\n
+PUT /charges/_READER_DELIM_charges_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"currency":{ "fuzz" : false }}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_10.txt
+Hash: PayloadBodyChecker_500_f764ab487e24e346d8d9f47e410afc74dd320132
+POST /charges HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{\n    "amount":1.23,\n    "currency":fuzzstring,\n    "credit_card_id":1}\r\n
+PUT /charges/_READER_DELIM_charges_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{ "fuzz" : false }
+--------------------------------------------------------------------------------

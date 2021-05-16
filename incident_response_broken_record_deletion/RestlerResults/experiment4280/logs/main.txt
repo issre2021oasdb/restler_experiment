@@ -1,0 +1,111 @@
+Setting fuzzing schemes: bfs-cheap
+2021-05-15 05:58:37.104: Going to fuzz a set with 4 requests
+2021-05-15 05:58:37.104: Request-0: Value Combinations: 4
+2021-05-15 05:58:37.104: Request-1: Value Combinations: 1
+2021-05-15 05:58:37.104: Request-2: Value Combinations: 1
+2021-05-15 05:58:37.104: Request-3: Value Combinations: 1
+2021-05-15 05:58:37.104: Avg. Value Combinations per Request: 1.75
+2021-05-15 05:58:37.104: Median Value Combinations per Request: 1.0
+2021-05-15 05:58:37.104: Min Value Combinations per Request: 1
+2021-05-15 05:58:37.104: Max Value Combinations per Request: 4
+2021-05-15 05:58:37.104: Total dependencies: 4
+2021-05-15 05:58:37.104: Generation: 1 / Sequences Collection Size: 1 (After bfs-cheap Extend)
+2021-05-15 05:58:37.313: Generation: 1 / Sequences Collection Size: 1 (After bfs-cheap Render)
+2021-05-15 05:58:37.314: Final Swagger spec coverage: 1 / 4
+2021-05-15 05:58:37.314: Rendered requests: 1 / 4
+2021-05-15 05:58:37.314: Rendered requests with "valid" status codes: 1 / 1
+2021-05-15 05:58:37.314: Num fully valid requests (no resource creation failures): 1
+2021-05-15 05:58:37.314: Num requests not rendered due to invalid sequence re-renders: 0
+2021-05-15 05:58:37.314: Num invalid requests caused by failed resource creations: 0
+2021-05-15 05:58:37.314: Total Creations of Dyn Objects: 10
+2021-05-15 05:58:37.314: Total Requests Sent: {'gc': 0, 'main_driver': 1, 'UseAfterFreeChecker': 0, 'PayloadBodyChecker': 29, 'ExamplesChecker': 0}
+2021-05-15 05:58:37.314: Bug Buckets: {}
+2021-05-15 05:58:37.315: Generation: 2 / Sequences Collection Size: 4 (After bfs-cheap Extend)
+2021-05-15 05:58:37.609: Generation: 2 / Sequences Collection Size: 4 (After bfs-cheap Render)
+2021-05-15 05:58:37.609: Final Swagger spec coverage: 4 / 4
+2021-05-15 05:58:37.609: Rendered requests: 4 / 4
+2021-05-15 05:58:37.609: Rendered requests with "valid" status codes: 4 / 4
+2021-05-15 05:58:37.609: Num fully valid requests (no resource creation failures): 4
+2021-05-15 05:58:37.609: Num requests not rendered due to invalid sequence re-renders: 0
+2021-05-15 05:58:37.609: Num invalid requests caused by failed resource creations: 0
+2021-05-15 05:58:37.609: Total Creations of Dyn Objects: 16
+2021-05-15 05:58:37.609: Total Requests Sent: {'gc': 0, 'main_driver': 9, 'UseAfterFreeChecker': 1, 'PayloadBodyChecker': 50, 'ExamplesChecker': 0}
+2021-05-15 05:58:37.609: Bug Buckets: {'UseAfterFreeChecker_20x': 1}
+2021-05-15 05:58:37.610: Generation: 3 / Sequences Collection Size: 16 (After bfs-cheap Extend)
+2021-05-15 05:58:38.683: Generation: 3 / Sequences Collection Size: 16 (After bfs-cheap Render)
+2021-05-15 05:58:38.683: Final Swagger spec coverage: 4 / 4
+2021-05-15 05:58:38.683: Rendered requests: 4 / 4
+2021-05-15 05:58:38.683: Rendered requests with "valid" status codes: 4 / 4
+2021-05-15 05:58:38.683: Num fully valid requests (no resource creation failures): 4
+2021-05-15 05:58:38.683: Num requests not rendered due to invalid sequence re-renders: 0
+2021-05-15 05:58:38.683: Num invalid requests caused by failed resource creations: 0
+2021-05-15 05:58:38.683: Total Creations of Dyn Objects: 40
+2021-05-15 05:58:38.683: Total Requests Sent: {'gc': 0, 'main_driver': 57, 'UseAfterFreeChecker': 5, 'PayloadBodyChecker': 50, 'ExamplesChecker': 0}
+2021-05-15 05:58:38.683: Bug Buckets: {'UseAfterFreeChecker_20x': 1}
+2021-05-15 05:58:38.685: Generation: 4 / Sequences Collection Size: 64 (After bfs-cheap Extend)
+2021-05-15 05:58:44.609: Generation: 4 / Sequences Collection Size: 64 (After bfs-cheap Render)
+2021-05-15 05:58:44.609: Final Swagger spec coverage: 4 / 4
+2021-05-15 05:58:44.609: Rendered requests: 4 / 4
+2021-05-15 05:58:44.609: Rendered requests with "valid" status codes: 4 / 4
+2021-05-15 05:58:44.609: Num fully valid requests (no resource creation failures): 4
+2021-05-15 05:58:44.609: Num requests not rendered due to invalid sequence re-renders: 0
+2021-05-15 05:58:44.609: Num invalid requests caused by failed resource creations: 0
+2021-05-15 05:58:44.609: Total Creations of Dyn Objects: 152
+2021-05-15 05:58:44.609: Total Requests Sent: {'gc': 0, 'main_driver': 313, 'UseAfterFreeChecker': 21, 'PayloadBodyChecker': 50, 'ExamplesChecker': 0}
+2021-05-15 05:58:44.609: Bug Buckets: {'UseAfterFreeChecker_20x': 1}
+2021-05-15 05:58:44.613: Generation: 5 / Sequences Collection Size: 256 (After bfs-cheap Extend)
+2021-05-15 05:59:13.934: Generation: 5 / Sequences Collection Size: 256 (After bfs-cheap Render)
+2021-05-15 05:59:13.934: Final Swagger spec coverage: 4 / 4
+2021-05-15 05:59:13.934: Rendered requests: 4 / 4
+2021-05-15 05:59:13.934: Rendered requests with "valid" status codes: 4 / 4
+2021-05-15 05:59:13.934: Num fully valid requests (no resource creation failures): 4
+2021-05-15 05:59:13.934: Num requests not rendered due to invalid sequence re-renders: 0
+2021-05-15 05:59:13.934: Num invalid requests caused by failed resource creations: 0
+2021-05-15 05:59:13.934: Total Creations of Dyn Objects: 664
+2021-05-15 05:59:13.934: Total Requests Sent: {'gc': 564, 'main_driver': 1593, 'UseAfterFreeChecker': 85, 'PayloadBodyChecker': 50, 'ExamplesChecker': 0}
+2021-05-15 05:59:13.934: Bug Buckets: {'UseAfterFreeChecker_20x': 1}
+2021-05-15 05:59:13.948: Generation: 6 / Sequences Collection Size: 1024 (After bfs-cheap Extend)
+2021-05-15 06:01:29.785: Generation: 6 / Sequences Collection Size: 1024 (After bfs-cheap Render)
+2021-05-15 06:01:29.785: Final Swagger spec coverage: 4 / 4
+2021-05-15 06:01:29.785: Rendered requests: 4 / 4
+2021-05-15 06:01:29.785: Rendered requests with "valid" status codes: 4 / 4
+2021-05-15 06:01:29.785: Num fully valid requests (no resource creation failures): 4
+2021-05-15 06:01:29.785: Num requests not rendered due to invalid sequence re-renders: 0
+2021-05-15 06:01:29.785: Num invalid requests caused by failed resource creations: 0
+2021-05-15 06:01:29.785: Total Creations of Dyn Objects: 2968
+2021-05-15 06:01:29.785: Total Requests Sent: {'gc': 2812, 'main_driver': 7737, 'UseAfterFreeChecker': 341, 'PayloadBodyChecker': 50, 'ExamplesChecker': 0}
+2021-05-15 06:01:29.785: Bug Buckets: {'UseAfterFreeChecker_20x': 1}
+2021-05-15 06:01:29.901: Generation: 7 / Sequences Collection Size: 4096 (After bfs-cheap Extend)
+2021-05-15 06:12:28.826: Generation: 7 / Sequences Collection Size: 4096 (After bfs-cheap Render)
+2021-05-15 06:12:28.826: Final Swagger spec coverage: 4 / 4
+2021-05-15 06:12:28.826: Rendered requests: 4 / 4
+2021-05-15 06:12:28.826: Rendered requests with "valid" status codes: 4 / 4
+2021-05-15 06:12:28.826: Num fully valid requests (no resource creation failures): 4
+2021-05-15 06:12:28.826: Num requests not rendered due to invalid sequence re-renders: 0
+2021-05-15 06:12:28.826: Num invalid requests caused by failed resource creations: 0
+2021-05-15 06:12:28.826: Total Creations of Dyn Objects: 13208
+2021-05-15 06:12:28.826: Total Requests Sent: {'gc': 12968, 'main_driver': 36409, 'UseAfterFreeChecker': 1365, 'PayloadBodyChecker': 50, 'ExamplesChecker': 0}
+2021-05-15 06:12:28.826: Bug Buckets: {'UseAfterFreeChecker_20x': 1}
+2021-05-15 06:12:29.385: Generation: 8 / Sequences Collection Size: 16384 (After bfs-cheap Extend)
+Timed out...
+2021-05-15 06:13:37.113: Generation: 8 / Sequences Collection Size: 16747 (After bfs-cheap Render)
+2021-05-15 06:13:37.113: Final Swagger spec coverage: 4 / 4
+2021-05-15 06:13:37.113: Rendered requests: 4 / 4
+2021-05-15 06:13:37.113: Rendered requests with "valid" status codes: 4 / 4
+2021-05-15 06:13:37.113: Num fully valid requests (no resource creation failures): 4
+2021-05-15 06:13:37.113: Num requests not rendered due to invalid sequence re-renders: 0
+2021-05-15 06:13:37.113: Num invalid requests caused by failed resource creations: 0
+2021-05-15 06:13:37.113: Total Creations of Dyn Objects: 14963
+2021-05-15 06:13:37.113: Total Requests Sent: {'gc': 14326, 'main_driver': 39321, 'UseAfterFreeChecker': 1365, 'PayloadBodyChecker': 50, 'ExamplesChecker': 0}
+2021-05-15 06:13:37.113: Bug Buckets: {'UseAfterFreeChecker_20x': 1}
+--
+
+2021-05-15 06:13:39.352: Final Swagger spec coverage: 4 / 4
+2021-05-15 06:13:39.352: Rendered requests: 4 / 4
+2021-05-15 06:13:39.352: Rendered requests with "valid" status codes: 4 / 4
+2021-05-15 06:13:39.352: Num fully valid requests (no resource creation failures): 4
+2021-05-15 06:13:39.352: Num requests not rendered due to invalid sequence re-renders: 0
+2021-05-15 06:13:39.352: Num invalid requests caused by failed resource creations: 0
+2021-05-15 06:13:39.352: Total Creations of Dyn Objects: 14963
+2021-05-15 06:13:39.352: Total Requests Sent: {'gc': 14963, 'main_driver': 39321, 'UseAfterFreeChecker': 1365, 'PayloadBodyChecker': 50, 'ExamplesChecker': 0}
+2021-05-15 06:13:39.352: Bug Buckets: {'UseAfterFreeChecker_20x': 1}

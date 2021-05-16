@@ -1,0 +1,1 @@
+{"version":"0.2","annotationTarget":"samples/payment_payload_missing_keys.json","spec_issues":[],"api_issues":[{"name":"payload_missing_keys","offender":null}]}

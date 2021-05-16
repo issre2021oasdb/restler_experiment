@@ -1,0 +1,8 @@
+POST /projects
+	InvalidJson
+	false
+
+PUT /projects/{project_id}
+	InvalidJson
+	false
+

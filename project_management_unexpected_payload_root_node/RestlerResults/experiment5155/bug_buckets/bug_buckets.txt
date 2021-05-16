@@ -1,0 +1,12 @@
+PayloadBodyChecker_500: 2
+Total Buckets: 2
+-------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_1.txt
+Hash: PayloadBodyChecker_500_9e5d0d756e4ade51c84d1c93f8d0a3315f20a93d
+POST /projects HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\nfalse
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_2.txt
+Hash: PayloadBodyChecker_500_2eb8e9f5a3638080ebbc903f7c311f30f69c1732
+POST /projects HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{\n    "name":fuzzstring,\n    "description":fuzzstring}\r\n
+PUT /projects/_READER_DELIM_projects_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\nfalse
+--------------------------------------------------------------------------------

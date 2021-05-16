@@ -1,0 +1,26 @@
+POST /projects
+	StructMissing_/name
+	{'description': 'fuzzstring'}
+
+	StructMissing_/description
+	{'name': 'fuzzstring'}
+
+	TypeMismatch_description
+	{'description': {'fuzz': False}}
+
+	StructMissing_/name/description
+	{'fuzz': False}
+
+PUT /projects/{project_id}
+	StructMissing_/name
+	{'description': 'fuzzstring'}
+
+	StructMissing_/description
+	{'name': 'fuzzstring'}
+
+	TypeMismatch_description
+	{'description': {'fuzz': False}}
+
+	StructMissing_/name/description
+	{'fuzz': False}
+

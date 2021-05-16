@@ -1,0 +1,24 @@
+################################################################################
+ PayloadBodyChecker_500
+
+ Other
+{'title': 'fuzzstring', 'service_id': False, 'assignee_id': 19}
+
+ Hash: PayloadBodyChecker_500_19d21d986f832be5f36f8d918480fa60668a9963
+
+ To attempt to reproduce this bug using restler, run restler with the command
+ line option of --replay_log <path_to_this_log>.
+ If an authentication token is required, you must also specify the token_refresh_cmd.
+
+ This log may contain specific values for IDs or names that were generated
+ during fuzzing, using the fuzzing dictionary. Such names will be re-played
+ without modification. You must update the replay log manually with any changes
+ required to execute the requests in your environment (for example, replacing
+ pre-created account, subscription, or other resource IDs, as needed).
+################################################################################
+
+-> POST /incidents HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"title":"fuzzstring","service_id":false,"assignee_id":19}
+! producer_timing_delay 0
+! max_async_wait_time 0
+PREVIOUS RESPONSE: 'HTTP/1.1 500 Internal Server Error\r\nContent-Type: text/html;charset=utf-8\r\nContent-Length: 30\r\nX-Xss-Protection: 1; mode=block\r\nX-Content-Type-Options: nosniff\r\nX-Frame-Options: SAMEORIGIN\r\nServer: WEBrick/1.6.0 (Ruby/2.7.2/2020-10-01)\r\nDate: Sat, 15 May 2021 04:57:01 GMT\r\nConnection: Keep-Alive\r\n\r\n<h1>Internal Server Error</h1>'
+

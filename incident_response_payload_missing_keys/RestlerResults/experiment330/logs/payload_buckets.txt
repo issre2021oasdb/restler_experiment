@@ -1,0 +1,29 @@
+POST /incidents
+	StructMissing_/title/assignee_id
+	{'service_id': 9}
+
+	StructMissing_/service_id/assignee_id
+	{'title': 'fuzzstring'}
+
+	StructMissing_/title/service_id
+	{'assignee_id': 11}
+
+	TypeMismatch_service_id
+	{'service_id': {'fuzz': False}}
+
+	StructMissing_/title/service_id/assignee_id
+	{'fuzz': False}
+
+PUT /incidents/{incident_id}
+	TypeMismatch_service_id
+	{'service_id': 26}
+
+	StructMissing_/service_id/assignee_id
+	{'title': 'fuzzstring'}
+
+	TypeMismatch_assignee_id
+	{'assignee_id': 28}
+
+	StructMissing_/title/service_id/assignee_id
+	{'fuzz': False}
+

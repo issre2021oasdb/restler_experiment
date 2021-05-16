@@ -1,0 +1,12 @@
+PayloadBodyChecker_500: 2
+Total Buckets: 2
+-------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_1.txt
+Hash: PayloadBodyChecker_500_fdd409c10bd84efe26f107be164190b60c7a1e1d
+POST /charges HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\nfalse
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_2.txt
+Hash: PayloadBodyChecker_500_1330eab4725005502aa986e2bcf7c5e12df9d008
+POST /charges HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{\n    "amount":1.23,\n    "currency":fuzzstring,\n    "credit_card_id":1}\r\n
+PUT /charges/_READER_DELIM_charges_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\nfalse
+--------------------------------------------------------------------------------

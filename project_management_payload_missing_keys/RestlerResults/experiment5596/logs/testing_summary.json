@@ -1,0 +1,19 @@
+{
+    "final_spec_coverage": "4 / 4",
+    "rendered_requests": "4 / 4",
+    "rendered_requests_valid_status": "4 / 4",
+    "num_fully_valid": 4,
+    "num_sequence_failures": 0,
+    "num_invalid_by_failed_resource_creations": 0,
+    "total_object_creations": 18839,
+    "total_requests_sent": {
+        "gc": 18839,
+        "main_driver": 42881,
+        "UseAfterFreeChecker": 516,
+        "PayloadBodyChecker": 66,
+        "ExamplesChecker": 0
+    },
+    "bug_buckets": {
+        "PayloadBodyChecker_500": 8
+    }
+}

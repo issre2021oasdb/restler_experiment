@@ -1,0 +1,1 @@
+{"version":"0.2","annotationTarget":"samples/project_management_invalid_examples.json","spec_issues":[{"name":"invalid_examples","offender":["paths","/projects","requestBody","content","application/json","example"]}],"api_issues":[]}

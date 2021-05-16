@@ -1,0 +1,12 @@
+PayloadBodyChecker_500: 2
+Total Buckets: 2
+-------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_1.txt
+Hash: PayloadBodyChecker_500_e6e3e631a64562f84bc758c025d3459393683f67
+POST /incidents HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\nfalse
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_2.txt
+Hash: PayloadBodyChecker_500_0bc564a752a03c0733611d241263594fe357c99c
+POST /incidents HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{\n    "title":fuzzstring,\n    "service_id":1,\n    "assignee_id":1}\r\n
+PUT /incidents/_READER_DELIM_incidents_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\nfalse
+--------------------------------------------------------------------------------

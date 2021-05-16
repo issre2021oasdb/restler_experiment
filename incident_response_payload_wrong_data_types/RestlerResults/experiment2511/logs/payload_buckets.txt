@@ -1,0 +1,20 @@
+POST /incidents
+	TypeMismatch_assignee_id
+	{'title': 'fuzzstring', 'service_id': 10, 'assignee_id': {'fuzz': False}}
+
+	TypeMismatch_service_id
+	{'title': 'fuzzstring', 'service_id': {'fuzz': False}, 'assignee_id': 12}
+
+	Other
+	{'title': 'fuzzstring', 'service_id': False, 'assignee_id': 19}
+
+PUT /incidents/{incident_id}
+	Other
+	{'title': 'fuzzstring', 'service_id': 'fuzzstring', 'assignee_id': 'fuzzstring'}
+
+	TypeMismatch_service_id
+	{'service_id': {'fuzz': False}}
+
+	TypeMismatch_assignee_id
+	{'assignee_id': {'fuzz': False}}
+

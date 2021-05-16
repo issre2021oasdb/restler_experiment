@@ -1,0 +1,18 @@
+{
+  "version": "0.2",
+  "annotationTarget": "samples/incident_response_invalid_examples.json",
+  "spec_issues": [
+    {
+      "name": "invalid_examples",
+      "offender": [
+        "paths",
+        "/incidents",
+        "requestBody",
+        "content",
+        "application/json",
+        "example"
+      ]
+    }
+  ],
+  "api_issues": []
+}

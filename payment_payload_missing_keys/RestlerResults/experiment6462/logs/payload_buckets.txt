@@ -1,0 +1,32 @@
+POST /charges
+	StructMissing_/amount/credit_card_id
+	{'currency': 'fuzzstring'}
+
+	StructMissing_/currency/credit_card_id
+	{'amount': 0}
+
+	StructMissing_/amount/currency
+	{'credit_card_id': 11}
+
+	TypeMismatch_currency
+	{'currency': {'fuzz': False}}
+
+	StructMissing_/amount/currency/credit_card_id
+	{'fuzz': False}
+
+PUT /charges/{charge_id}
+	StructMissing_/amount/credit_card_id
+	{'currency': 'fuzzstring'}
+
+	StructMissing_/currency/credit_card_id
+	{'amount': 0}
+
+	TypeMismatch_credit_card_id
+	{'credit_card_id': 28}
+
+	TypeMismatch_currency
+	{'currency': {'fuzz': False}}
+
+	StructMissing_/amount/currency/credit_card_id
+	{'fuzz': False}
+

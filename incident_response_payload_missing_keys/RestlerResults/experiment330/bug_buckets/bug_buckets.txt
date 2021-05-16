@@ -1,0 +1,42 @@
+PayloadBodyChecker_500: 9
+Total Buckets: 9
+-------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_1.txt
+Hash: PayloadBodyChecker_500_03c1f7188ff90fd2baf9684c6c7c9c429e58f11e
+POST /incidents HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"service_id":9}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_2.txt
+Hash: PayloadBodyChecker_500_675ac52a9e40061e3ce0d442641d9fb3ebf340d4
+POST /incidents HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"title":"fuzzstring"}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_3.txt
+Hash: PayloadBodyChecker_500_410d6eee0e4d614a9a48bc1d11e5269d7eb5cd14
+POST /incidents HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"assignee_id":11}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_4.txt
+Hash: PayloadBodyChecker_500_57925cf9ec1d186dffade4c3b933f4fc068e4aa2
+POST /incidents HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"service_id":{ "fuzz" : false }}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_5.txt
+Hash: PayloadBodyChecker_500_4e3a078bcf4ba8632103e94344aa7502cf30e385
+POST /incidents HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{ "fuzz" : false }
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_6.txt
+Hash: PayloadBodyChecker_500_af8f4270c36201f5bc1cbf66c7e947d2e086a061
+POST /incidents HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{\n    "title":fuzzstring,\n    "service_id":1,\n    "assignee_id":1}\r\n
+PUT /incidents/_READER_DELIM_incidents_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"service_id":26}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_7.txt
+Hash: PayloadBodyChecker_500_7ab28aef6f0c23fe064f647d3624fbc1abe02f85
+POST /incidents HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{\n    "title":fuzzstring,\n    "service_id":1,\n    "assignee_id":1}\r\n
+PUT /incidents/_READER_DELIM_incidents_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"title":"fuzzstring"}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_8.txt
+Hash: PayloadBodyChecker_500_522dd96c36ee5216389b2367e2ffa47d46ed9717
+PUT /incidents/_READER_DELIM_incidents_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{"assignee_id":28}
+--------------------------------------------------------------------------------
+PayloadBodyChecker_500 - Bug was reproduced - PayloadBodyChecker_500_9.txt
+Hash: PayloadBodyChecker_500_9f09c9829537520b0d7883ed7e606393d9e8d8b6
+POST /incidents HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{\n    "title":fuzzstring,\n    "service_id":1,\n    "assignee_id":1}\r\n
+PUT /incidents/_READER_DELIM_incidents_post_id_READER_DELIM HTTP/1.1\r\nAccept: application/json\r\nHost: localhost:3000\r\nContent-Type: application/json\r\n\r\n{ "fuzz" : false }
+--------------------------------------------------------------------------------

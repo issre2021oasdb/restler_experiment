@@ -1,0 +1,8 @@
+POST /incidents
+	InvalidJson
+	false
+
+PUT /incidents/{incident_id}
+	InvalidJson
+	false
+
